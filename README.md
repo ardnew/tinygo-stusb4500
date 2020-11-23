@@ -45,8 +45,27 @@
 
 ## Usage
 
+An example program is provided at [`examples/main.go`](https://github.com/ardnew/tinygo-stusb4500/blob/main/examples/main.go), which performs the following described in its header comments:
+
+```go
+
+// This example demonstrates how to use the STUSB4500 driver to monitor cable
+// attach/detach, read the USB PD source capabilities, and negotiate different
+// power profiles.
+//
+// An external button is used to cycle through each of the power profiles
+// discovered.
+//
+// An LED is used to indicate USB PD negotiation activity.
+//
+// Note that your STUSB4500 should be powered via VBUS, which is connected to
+// the USB Type-C cable itself, and NOT via VSYS/VCC (which should be connected
+// to ground).
+```
+
 ### Wiring
 
+- **TBD**
 
 ### Troubleshooting (from previous Arduino project)
 > The PD protocol has *very* rigid timing requirements. These can be difficult to accommodate even in normal circumstances, but is even more difficult since there is another device (our STUSB4500) mediating communication over an I²C bus, which is rather slow. This is partly why the interrupts are vital to successful operation.
