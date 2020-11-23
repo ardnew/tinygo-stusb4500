@@ -26,7 +26,6 @@
    |`OnCableAttach`|USB Type-C cable connected|
    |`OnCableDetach`|USB Type-C cable disconnected|
    |`OnCapabilities`|USB PD capabilities received from source|
-   
 - [x] Can analyze and identify all available power profiles
 - [x] Can request and use any arbitrary power profile +5-20V/0-5A in 50mV/10mA increments
    - Does not lose VBUS on power transition, maintains power output
